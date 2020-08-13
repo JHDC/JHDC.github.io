@@ -11,16 +11,17 @@
       <img src="image.jpg" width="300"></img>
       <div class="heading-text">
         <h1>👋Hello!</h1>
-        <h4>I'm Jarrett</h4>
+        <h4>I'm Jarrett<span class="hidden-mobile"> Hatchett</span></h4>
       </div>
     </div>
-    <p>I'm a Systems Administrator from Lubbock, Texas</p>
+    <p class="p1">I'm a Systems Administrator from Lubbock, Texas</p>
     <p>Most of my workday is spent working on internal and customer-facing webapps</p>
     <p class="p1">Most of my projects are in Ruby on Rails & VueJS, though I frequently try out new frameworks to expand my skillset</p>
     <p>You can find my github page <a href="https://github.com/JHDC">here</a></p>
   </body>
 
   <style>
+  
   body {
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -35,6 +36,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .hidden-mobile {
+    display: none;
   }
   img {
     border-radius: 5%;
@@ -66,6 +70,8 @@
     }
     .heading {
       display: flex;
+      flex-direction: row;
+      align-items: stretch;
       justify-content: center;
       margin-top: 5%;
     }
@@ -73,6 +79,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: stretch;
+    }
+    .hidden-mobile {
+      display: inline;
     }
   }
   </style>
